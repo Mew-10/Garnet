@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "garnet:block/garnet_lamp_off" },
+    "clicked=true": { "model": "garnet:block/garnet_lamp_on" }
+  }
+}
