@@ -19,6 +19,11 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.ROLLY,513318, 764775638,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> BLARAOLS_SPAWN_EGG = ITEMS.register("blaraols_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROLLY,513318, 764775638,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

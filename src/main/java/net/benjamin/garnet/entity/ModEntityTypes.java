@@ -1,6 +1,7 @@
 package net.benjamin.garnet.entity;
 
 import net.benjamin.garnet.GarnetMod;
+import net.benjamin.garnet.entity.custom.BlaraolsEntity;
 import net.benjamin.garnet.entity.custom.RollyEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -19,6 +20,12 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(RollyEntity::new, MobCategory.CREATURE)
                             .sized(0.8f, 0.6f)
                             .build(new ResourceLocation(GarnetMod.MOD_ID, "rolly").toString()));
+
+    public static final RegistryObject<EntityType<BlaraolsEntity>> BLARAOS =
+            ENTITY_TYPES.register("blaraols",
+                    () -> EntityType.Builder.of(BlaraolsEntity::new, MobCategory.MONSTER)
+                            .sized(0.4F, 0.3F)
+                            .build(new ResourceLocation(GarnetMod.MOD_ID, "blaraols").toString()));
 
 
     public static void register(IEventBus eventBus) {
